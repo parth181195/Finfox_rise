@@ -518,3 +518,111 @@ textarea {
         width: 250px;
         margin-left: -125px;
         margin-top: -106.6875px; } }
+
+.c-card {
+  width: 275px;
+  height: 170px;
+  background: -webkit-linear-gradient(45deg, #30d874 0%, #00ddf3 140%);
+  background: linear-gradient(45deg, #30d874 0%, #00ddf3 140%);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin: 50px auto 0 auto;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 65px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 65px rgba(0, 0, 0, 0.2); }
+  .c-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 275px;
+    background-image: url("../img/web-02.png");
+    width: 275px;
+    height: 170px;
+    opacity: 0.35; }
+  .c-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/visa-06.png");
+    background-position: 230px 20px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 275px;
+    height: 170px; }
+  .c-card .name {
+    font-family: Roboto;
+    color: #fff;
+    font-size: 1em;
+    padding-top: 30px; }
+  .c-card .alias {
+    font-family: Roboto;
+    color: #fff;
+    font-size: 1em;
+    padding-top: 30px; }
+  .c-card .number {
+    padding-top: 30px;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 1em; }
+
+.details {
+  margin-top: 50px; }
+  .details .line {
+    position: relative;
+    width: 250px;
+    margin: auto;
+    height: 50px; }
+    .details .line span {
+      font-family: Roboto;
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 1em;
+      position: absolute;
+      display: inline-block; }
+    .details .line span:nth-child(1) {
+      left: 20px; }
+    .details .line span:nth-child(2) {
+      right: 20px; }
+
+@media (min-width: 700px) {
+  .c-card {
+    width: 500px;
+    height: 300px;
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    position: relative; }
+    .c-card::before {
+      background-size: 500px;
+      width: 500px;
+      height: 300px; }
+    .c-card::after {
+      background-position: 420px 20px;
+      background-repeat: no-repeat;
+      background-size: 60px;
+      width: 500px;
+      height: 300px; }
+    .c-card .name {
+      font-size: 1.8em;
+      padding-top: 50px; }
+    .c-card .alias {
+      font-size: 1.8em;
+      padding-top: 40px; }
+    .c-card .number {
+      padding-top: 40px;
+      font-size: 1.8em; }
+  .details {
+    margin-top: 50px; }
+    .details .line {
+      position: relative;
+      width: 500px;
+      margin: auto;
+      height: 50px; }
+      .details .line span {
+        font-size: 1.8em; }
+      .details .line span:nth-child(1) {
+        left: 20px; }
+      .details .line span:nth-child(2) {
+        right: 20px; } }

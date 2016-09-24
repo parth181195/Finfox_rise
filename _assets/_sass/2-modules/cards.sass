@@ -1,0 +1,104 @@
+.c-card
+  width: 275px
+  height: 170px
+  background: linear-gradient(45deg, rgba(48,216,116,1) 0%, rgba(0,221,243,1) 140%)
+  border-radius: 10px
+  margin: 50px auto 0 auto
+  position: relative
+  box-shadow: 0px 0px 65px rgba(#000000, 0.20)
+  &::before
+    content: ""
+    position: absolute
+    left: 0
+    top: 0
+    background-position: 10px
+    background-repeat: no-repeat
+    background-size: 275px
+    background-image: url("../img/web-02.png")
+    width: 275px
+    height: 170px
+    opacity: 0.35
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    background-image: url("../img/visa-06.png")
+    background-position: 230px 20px
+    background-repeat: no-repeat
+    background-size: 30px
+    width: 275px
+    height: 170px
+  .name
+    font-family: Roboto
+    color: #fff
+    font-size: 1em
+    padding-top: 30px
+  .alias
+    font-family: Roboto
+    color: #fff
+    font-size: 1em
+    padding-top: 30px
+  .number
+    padding-top: 30px
+    span
+    font-family: Roboto
+    color: #fff
+    font-size: 1em
+.details
+  margin-top: 50px
+  .line
+    position: relative
+    width: 250px
+    margin: auto
+    height: 50px
+    span
+      font-family: Roboto
+      color: rgba(#000000, 0.7)
+      font-size: 1em
+      position: absolute
+      display: inline-block
+    span:nth-child(1)
+      left: 20px
+    span:nth-child(2)
+      right: 20px
+
+@media(min-width:700px)
+  .c-card
+    width: 500px
+    height: 300px
+    border-radius: 15px
+    position: relative
+    &::before
+      background-size: 500px
+      width: 500px
+      height: 300px
+    &::after
+      background-position: 420px 20px
+      background-repeat: no-repeat
+      background-size: 60px
+      width: 500px
+      height: 300px
+    .name
+      font-size: 1.8em
+      padding-top: 50px
+    .alias
+      font-size: 1.8em
+      padding-top: 40px
+    .number
+      padding-top: 40px
+      span
+      font-size: 1.8em
+  .details
+    margin-top: 50px
+    .line
+      position: relative
+      width: 500px
+      margin: auto
+      height: 50px
+      span
+        font-size: 1.8em
+      span:nth-child(1)
+        left: 20px
+      span:nth-child(2)
+        right: 20px

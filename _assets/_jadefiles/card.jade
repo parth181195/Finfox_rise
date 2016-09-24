@@ -6,7 +6,7 @@ html(lang='en')
       meta(name="description", content="")
       meta(name="author", content="parth_jansari")
       meta(name="viewport", content="width=device-width, initial-scale=1")
-      link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Francois+One")
+      link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Francois+One|Oswald:300")
       link(rel="stylesheet", href="css/main.css")
     body
       .navbar
@@ -17,26 +17,20 @@ html(lang='en')
         .links
           a(href="#") settings
           a(href="#") logout
-      .container
-        .row-wrapper
-          .row
-            .cards
-              .img
-                img(src="img/1-04.png") 
-              .title parth
-            .cards
-              .img
-                img(src="img/1-05.png") 
-              .title parth
-          .row
-            .cards
-              .img
-                img(src="img/1-03.png") 
-              .title parth
-            .cards
-              .img
-                img(src="img/1-02.png") 
-              .title parth
+      .container(style="overflow-Y:visible")
+        .card
+          .c-card
+            .name Vaibhav Patel
+            .alias vaibhav
+            .number
+              span 2020  2057  5048  5048
+          .details
+            .line
+              span cradit
+              span 2000$ 
+            .line
+              span cradit
+              span 2000$ 
       script(src="https://use.fontawesome.com/4077f384a5.js")
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
       script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js")
