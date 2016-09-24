@@ -1,20 +1,112 @@
 .container
-  background: rgb(62, 172, 91)
+  text-align: center
   width: 100%
   height: calc(100vh - 60px)
+  position: relative
+  background-color: #fff
+  overflow: hidden
+  &::before
+    content: ""
+    background-image: url("../img/logo-o.png")
+    position: absolute
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background-repeat: no-repeat
+    background-size: 200vw
+    background-position: top
+    opacity: 0.045
   .row-wrapper
-    padding-top:  calc(30vh - 60px)
-    .row:nth-child(1)
-      margin-bottom: 20px
+    position: absolute
+    margin-left: -150px
+    margin-top: -154px
+    left: 50%
+    top: 50%
     .row
-      width: calc(40vh + 20px)
-      height: 20vh
-      background: rgb(191, 184, 18)
-      margin: auto
-      .cards:nth-child(1)
-        margin-right: 20px
       .cards
-        width: 20vh
-        height: 20vh
-        background: rgb(145, 65, 7)
+        text-align: center
+        position: relative
+        background: rgb(255, 255, 255)
+        width: 130px
+        height: 130px
+        margin: 10px
         display: inline-block
+        border-radius: 10px
+        box-shadow: 0px 0px 65px rgba(#000000, 0.20)
+        transition: box-shadow 0.3s
+        .img
+          img
+            position: absolute
+            width: 50px
+            left: 50%
+            top: 50%
+            margin-top: -21.336px
+            margin-left: -25px
+        .title
+          display: inline-block
+          position: absolute
+          bottom: 10px
+          font-family: Roboto
+          opacity: 0.5
+          left: 50%
+          font-size: 1em
+          margin-left: -19.0705px
+        &:hover
+          box-shadow: 0px 0px 55px rgba(#000000, 0.30)
+
+@media(max-width:350px)
+  .container
+    .row-wrapper
+      margin-left: -120px
+      margin-top: -124px
+      .row
+        .cards
+          width: 100px
+          height: 100px
+          .img
+            img
+          .title
+            bottom: 5px
+            font-size: 1em
+            margin-left: -19.0705px
+@media(min-width:500px)
+  .container
+    .row-wrapper
+      margin-left: -220px
+      margin-top: -224px
+      .row
+        .cards
+          width: 200px
+          height: 200px
+          .img
+            img
+              width: 125px
+          .title
+@media(min-width:700px)
+  .container
+    .row-wrapper
+      .row
+        .cards
+          width: 200px
+          height: 200px
+@media(min-width:900px)
+  .container
+    &::before
+      background-size: 125vw
+    .row-wrapper
+      margin-left: -220px
+      margin-top: -224px
+      .row
+        .cards
+          width: 200px
+          height: 200px
+@media(min-width:1400px)
+  .container
+    .row-wrapper
+      margin-left: -310px
+      margin-top: -314px
+      .row
+        .cards
+          width: 300px
+          height: 300px
