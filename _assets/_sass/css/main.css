@@ -377,7 +377,9 @@ textarea {
     left: 50%;
     margin-left: -62.008px; }
     .navbar .logo a {
-      height: 30px; }
+      height: 30px;
+      text-decoration: none;
+      color: #000; }
       .navbar .logo a::before {
         content: "";
         margin-top: 5px; }
@@ -392,13 +394,13 @@ textarea {
   .navbar .links {
     position: absolute;
     display: inline-block;
+    list-style: none;
     margin: 0;
+    padding: 0;
     right: 0; }
-    .navbar .links a i {
-      font-size: 1.5em;
-      margin: 7.5px 30px 7.5px 7.5px; }
-      .navbar .links a i:hover {
-        color: #427c47; }
+    .navbar .links a {
+      display: inline-block;
+      margin-left: 10px; }
 
 .container {
   text-align: center;
@@ -482,7 +484,9 @@ textarea {
       width: 200px;
       height: 200px; }
       .container .row-wrapper .row .cards .img img {
-        width: 125px; } }
+        width: 125px;
+        margin-left: -62.5px;
+        margin-top: -53.344px; } }
 
 @media (min-width: 700px) {
   .container .row-wrapper .row .cards {
@@ -497,7 +501,11 @@ textarea {
     margin-top: -224px; }
     .container .row-wrapper .row .cards {
       width: 200px;
-      height: 200px; } }
+      height: 200px; }
+      .container .row-wrapper .row .cards .img img {
+        width: 150px;
+        margin-left: -75px;
+        margin-top: -64.008px; } }
 
 @media (min-width: 1400px) {
   .container .row-wrapper {
@@ -505,4 +513,8 @@ textarea {
     margin-top: -314px; }
     .container .row-wrapper .row .cards {
       width: 300px;
-      height: 300px; } }
+      height: 300px; }
+      .container .row-wrapper .row .cards .img img {
+        width: 250px;
+        margin-left: -125px;
+        margin-top: -106.6875px; } }
