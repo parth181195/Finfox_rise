@@ -11,13 +11,26 @@ html(lang='en')
     body
       .navbar
         .logo
-          a(href="#")
+          a(href="index.html")
             img(src="img/logo-o.png") 
             span FinFox
         .links
-          a(href="#") settings
-          a(href="#") logout
+          i.fa.fa-ellipsis-v
+          ul.dropdown
+            li 
+              i.fa.fa-cog
+              a(href="#")
+                |settings 
+            li 
+              i.fa.fa-sign-out
+              a(href="#") 
+                |logout 
       .container(style="overflow-Y:visible")
+        .list
+          ul
+            li jan
+            li fab
+            li mar
         .card
           .c-card
             .name Vaibhav Patel

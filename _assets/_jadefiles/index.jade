@@ -1,48 +1,56 @@
 doctype html
 html(lang='en')
-    head
-      meta(charset="utf-8")
-      title Parth Jansari | Designer
-      meta(name="description", content="")
-      meta(name="author", content="parth_jansari")
-      meta(name="viewport", content="width=device-width, initial-scale=1")
-      link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Francois+One")
-      link(rel="stylesheet", href="css/main.css")
+  head
+    meta(charset="utf-8")
+    title Parth Jansari | Designer
+    meta(name="description", content="")
+    meta(name="author", content="parth_jansari")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Francois+One")
+    link(rel="stylesheet", href="css/main.css")
+    script(src="https://use.fontawesome.com/4077f384a5.js")
     body
       .navbar
         .logo
-          a(href="#")
+          a(href="index.html")
             img(src="img/logo-o.png") 
             span FinFox
         .links
-          a(href="#") settings
-          a(href="#") logout
+          i.fa.fa-ellipsis-v
+          ul.dropdown
+            li 
+              i.fa.fa-cog
+              a(href="#")
+                |settings 
+            li 
+              i.fa.fa-sign-out
+              a(href="#") 
+                |logout 
       .container
         .row-wrapper
           .row
             a(href="card.html")
               .cards
                 .img
-                  img(src="img/1-05.png") 
+                  img.card(src="img/1-05.png") 
                 .title Cards
             a(href="planner.html")
               .cards
                 .img
-                  img(src="img/1-04.png") 
+                  img.planner(src="img/1-04.png") 
                 .title planner
           .row
             a(href="sign-up.html")
               .cards
                 .img
-                  img(src="img/1-03.png") 
+                  img.loans(src="img/1-03.png") 
                 .title lons
             a(href="card.html")
               .cards
                 .img
-                  img(src="img/1-02.png") 
+                  img.nerd(src="img/1-02.png") 
                 .title contact nerd
-      script(src="https://use.fontawesome.com/4077f384a5.js")
-      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-      script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js")
-      script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/ScrollToPlugin.min.js")
-      script(src="js/app.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/ScrollToPlugin.min.js")
+    script(src="js/app.js")

@@ -11,15 +11,30 @@ html(lang='en')
     body
       .navbar
         .logo
-          a(href="#")
+          a(href="index.html")
             img(src="img/logo-o.png") 
             span FinFox
         .links
-          a(href="#") settings
-          a(href="#") logout
+          i.fa.fa-ellipsis-v
+          ul.dropdown
+            li 
+              i.fa.fa-cog
+              a(href="#")
+                |settings 
+            li 
+              i.fa.fa-sign-out
+              a(href="#") 
+                |logout 
       .container
-        .row-wrapper
-        .graph
+        .planner
+          .graph
+          .list
+            ul
+              li jan
+              li fab
+              li mar
+          .cards
+          .cards
         
       script(src="https://use.fontawesome.com/4077f384a5.js")
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")

@@ -24,12 +24,33 @@
         color: linear-gradient(red , yellow)
         opacity: 0.5
   .links
-    position: absolute
     display: inline-block
-    list-style: none
-    margin: 0
-    padding: 0
-    right: 0
-    a
-      display: inline-block
-      margin-left: 10px
+    ul.dropdown
+      position: absolute
+      list-style: none
+      margin: 0
+      padding: 0
+      display: none
+      right: 15px
+      top: 60px
+      z-index: 1
+      box-shadow: 0 20px 37px rgba(0, 0, 0, 0.2)
+      li
+        padding: 5px 5px 5px 20px
+        background-color: #fff
+        a
+          text-decoration: none
+          color: #000
+        i.fa-cog,i.fa-sign-out
+          right: 45px
+          font-size: 1em
+          padding-top: 5px
+
+    i.fa
+      position: absolute
+      right: 0
+      padding: 0 20px 5px 5px
+      font-size: 1.8em
+      color: rgba(0, 0, 0, 0.68)
+      &:hover
+        color: rgba(0, 0, 0, 0.5)
